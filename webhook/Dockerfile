@@ -1,6 +1,5 @@
-FROM node:latest
-
-RUN npm install -g hexo-cli
+FROM alpine:3.7
+RUN apk add --no-cache git
 COPY ./webhook /opt/webhook/webhook
 COPY ./hooks.json /opt/webhook/hooks.json
 COPY ./deploy.sh /opt/webhook/deploy.sh

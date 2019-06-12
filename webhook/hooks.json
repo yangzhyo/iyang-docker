@@ -26,7 +26,7 @@
           "match":
           {
             "type": "payload-hash-sha1",
-            "secret": "xxxxx",
+            "secret": "xxxx",
             "parameter":
             {
               "source": "header",
