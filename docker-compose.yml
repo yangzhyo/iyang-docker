@@ -32,8 +32,8 @@ services:
     depends_on:
       - letsencrypt
     environment:
-      - VIRTUAL_HOST=iya.ng
-      - LETSENCRYPT_HOST=iya.ng
+      - VIRTUAL_HOST=iya.ng,www.iya.ng,yangzhiyong.com,www.yangzhiyong.com
+      - LETSENCRYPT_HOST=iya.ng,www.iya.ng,yangzhiyong.com,www.yangzhiyong.com
       - LETSENCRYPT_EMAIL=yangzhyo@gmail.com
     volumes:
       - /opt:/app
