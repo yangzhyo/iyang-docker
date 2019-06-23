@@ -42,8 +42,10 @@ services:
     container_name: iyang-webhook
     depends_on:
       - iyang-server
-    ports:
-      - "9000:9000"
+    environment:
+      - VIRTUAL_HOST=deploy.iya.ng
+      - LETSENCRYPT_HOST=deploy.iya.ng
+      - LETSENCRYPT_EMAIL=yangzhyo@gmail.com
     volumes:
       - /opt:/app
 volumes:
