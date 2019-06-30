@@ -1,5 +1,10 @@
 version: "3"
 services:
+  iyang-build:
+    image: yangzhyo/iyang-build
+    container_name: iyang-build
+    volumes:
+      - /opt:/app
   nginx-proxy:
     image: jwilder/nginx-proxy
     container_name: nginx-proxy

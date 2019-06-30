@@ -12,4 +12,4 @@ cd /app/iyang/themes/next
 git pull origin master
 cd /app/iyang
 npm install
-hexo server
+hexo generate

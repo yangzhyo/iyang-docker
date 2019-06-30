@@ -1,7 +1,5 @@
-FROM node:latest
-RUN npm install -g hexo-cli
-COPY ./deploy.sh /tmp/
-RUN chmod +x /tmp/deploy.sh
+FROM nginx:latest
+RUN rm /etc/nginx/conf.d/default.conf
+COPY ./default.conf /etc/nginx/conf.d/
 VOLUME /app
-EXPOSE 4000
-ENTRYPOINT ["/tmp/deploy.sh"]
+EXPOSE 80

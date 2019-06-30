@@ -1,5 +1,12 @@
 version: "3"
 services:
+  iyang-build:
+    image: yangzhyo/iyang-build
+    deploy:
+      restart_policy:
+        condition: none
+    volumes:
+      - /opt:/app
   nginx-proxy:
     image: jwilder/nginx-proxy
     labels:
