@@ -44,6 +44,16 @@ services:
       - LETSENCRYPT_EMAIL=yangzhyo@gmail.com
     volumes:
       - /opt:/app
+  iyang-asset:
+    image: yangzhyo/iyang-asset
+    depends_on:
+      - letsencrypt
+    environment:
+      - VIRTUAL_HOST=a.iya.ng
+      - LETSENCRYPT_HOST=a.iya.ng
+      - LETSENCRYPT_EMAIL=yangzhyo@gmail.com
+    volumes:
+      - /opt:/app
 volumes:
   conf:
   vhost:
