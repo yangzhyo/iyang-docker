@@ -1,5 +1,7 @@
 #!/bin/sh
 
+git config --global user.email "me@iya.ng"
+git config --global user.name "me"
 cd /app/iyang-asset
 git pull origin master
 cd /app/iyang

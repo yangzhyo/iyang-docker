@@ -1,5 +1,7 @@
 #!/bin/sh
 
+git config --global user.email "me@iya.ng"
+git config --global user.name "me"
 cd /app
 git clone https://github.com/yangzhyo/iyang-asset.git
 cd /app/iyang-asset
